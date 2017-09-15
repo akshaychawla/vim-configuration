@@ -8,7 +8,7 @@ set tabstop=4			" number of visual spaces per tab
 set softtabstop=4 		" number of spaces in tab when editing
 set expandtab			" tabs == spaces; so <TAB> is just shortcut for 4 spaces 
 set autoindent          " automaticall indent when newline is entered (or else it will go to the beginning of the next line) 
-" set smartindent         " The docs say: does the correct thing usually :/ 
+set smartindent         " The docs say: does the correct thing usually :/ 
 
 " -------- UI CONFIG ---------
 set number 			    " show line numbers (CRUCIAL)
@@ -24,4 +24,12 @@ set hlsearch            " highlight matches
 
 " ------- FOLDING -------------
 " I don't know If I need it yet. 
- 
+
+" -------- Line Indentation from indentLine.vim plugin ----
+
+" -------- Provide hjkl navigation in insert mode ---------
+inoremap <A-h> <C-o>h
+inoremap <A-j> <C-o>j
+inoremap <A-k> <C-o>k
+inoremap <A-l> <C-o>l
+
