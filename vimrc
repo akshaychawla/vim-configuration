@@ -9,7 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'file:///home/sviper/.vim/bundle/YouCompleteMe' 
+Plugin 'Valloric/YouCompleteMe' 
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -83,9 +83,12 @@ inoremap <A-k> <C-o>k
 inoremap <A-l> <C-o>l
 
 " --------- COLORS -----------
+set t_Co=256
+syntax on 
 syntax enable
 set background=dark
-colorscheme monokai
+let g:solarized_termcolors=256 "this is what fixed it for me "
+colorscheme solarized
 
 " ---- Backspace issue in VIM8 ---
 set backspace=2
