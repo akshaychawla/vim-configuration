@@ -86,9 +86,12 @@ inoremap <A-l> <C-o>l
 set t_Co=256
 syntax on 
 syntax enable
-set background=dark
+set background=light
 let g:solarized_termcolors=256 "this is what fixed it for me "
-colorscheme solarized
+colorscheme morning
 
 " ---- Backspace issue in VIM8 ---
 set backspace=2
+
+" ---- python breakpoint macro ---
+nmap <C-S-B> ^oimport ipdb; ipdb.set_trace()<Esc>^
