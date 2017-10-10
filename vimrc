@@ -95,3 +95,6 @@ set backspace=2
 
 " ---- python breakpoint macro ---
 nmap <C-S-B> ^oimport ipdb; ipdb.set_trace()<Esc>^
+
+" --- delete to empty register ---
+nmap <C-x> "_x
