@@ -14,6 +14,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'itchyny/lightline.vim'
+Plugin 'rakr/vim-one'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -86,9 +88,9 @@ inoremap <A-l> <C-o>l
 set t_Co=256
 syntax on 
 syntax enable
-set background=light
-let g:solarized_termcolors=256 "this is what fixed it for me "
-colorscheme morning
+colorscheme one
+set background=dark
+"let g:solarized_termcolors=256 "this is what fixed it for me "
 
 " ---- Backspace issue in VIM8 ---
 set backspace=2
@@ -98,3 +100,8 @@ nmap <C-S-B> ^oimport ipdb; ipdb.set_trace()<Esc>^
 
 " --- delete to empty register ---
 nmap <C-x> "_x
+
+" --- lightline - statusline ---
+set laststatus=2 
+let g:airline_theme='one'
+
