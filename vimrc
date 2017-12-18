@@ -105,3 +105,6 @@ nmap <C-x> "_x
 set laststatus=2 
 let g:airline_theme='one'
 
+" --- No swap files ----
+set nobackup 
+set noswapfile
