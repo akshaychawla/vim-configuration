@@ -88,9 +88,9 @@ inoremap <A-l> <C-o>l
 set t_Co=256
 syntax on 
 syntax enable
-colorscheme one
 set background=dark
-"let g:solarized_termcolors=256 "this is what fixed it for me "
+let g:solarized_termcolors=256 "this is what fixed it for me "
+colorscheme solarized
 
 " ---- Backspace issue in VIM8 ---
 set backspace=2
@@ -103,7 +103,7 @@ nmap <C-x> "_x
 
 " --- lightline - statusline ---
 set laststatus=2 
-let g:airline_theme='one'
+"let g:airline_theme='one'
 
 " --- No swap files ----
 set nobackup 
