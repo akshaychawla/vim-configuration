@@ -10,10 +10,11 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe' 
-Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'frankier/neovim-colors-solarized-truecolor-only'
+Plugin 'morhetz/gruvbox'
 Plugin 'itchyny/lightline.vim'
 Plugin 'rakr/vim-one'
 " The following are examples of different formats supported.
@@ -85,12 +86,11 @@ inoremap <A-k> <C-o>k
 inoremap <A-l> <C-o>l
 
 " --------- COLORS -----------
-set t_Co=256
 syntax on 
 syntax enable
+set termguicolors
+colorscheme gruvbox
 set background=dark
-let g:solarized_termcolors=256 "this is what fixed it for me "
-colorscheme solarized
 
 " ---- Backspace issue in VIM8 ---
 set backspace=2
@@ -103,7 +103,6 @@ nmap <C-x> "_x
 
 " --- lightline - statusline ---
 set laststatus=2 
-"let g:airline_theme='one'
 
 " --- No swap files ----
 set nobackup 
