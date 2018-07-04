@@ -9,15 +9,16 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe' 
 Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'lifepillar/vim-solarized8'
 Plugin 'scrooloose/nerdtree'
-Plugin 'frankier/neovim-colors-solarized-truecolor-only'
 Plugin 'morhetz/gruvbox'
-Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rakr/vim-one'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'markonm/traces.vim'
+" Plugin 'flazz/vim-colorschemes'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -90,7 +91,7 @@ inoremap <A-l> <C-o>l
 syntax on 
 syntax enable
 set termguicolors
-colorscheme gruvbox
+colorscheme one
 set background=dark
 
 " ---- Backspace issue in VIM8 ---
@@ -108,3 +109,4 @@ set laststatus=2
 " --- No swap files ----
 set nobackup 
 set noswapfile
+
